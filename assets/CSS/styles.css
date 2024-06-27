@@ -1,0 +1,137 @@
+:root {
+    --color-green-dark: #4B9346;
+    --color-green-hover: #33752f;
+    --color-green: rgb(108, 184, 103);
+    --color-green-light: #B9DDB7;
+    --color-text: #0D3D0F;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--color-green-light);
+}
+
+header {
+    background-color: var(--color-green-dark);
+    color: white;
+}
+
+header h1 {
+    font-size: 1rem;
+}
+
+header .form-control:focus {
+    border: none;
+    background-color: var(--color-green-dark);
+    color: white;
+}
+
+header .form-control, header .input-group-text {
+    background-color: var(--color-green-dark);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+header .form-control::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+main .container, header .container {
+    max-width: 62.5rem;
+} 
+
+main .form-label {
+    color:#0D3D0F;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+main .form-control, main .form-select {
+    border: 1px solid white;
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+main .input-group-text {
+    border: 1px solid white;
+    color: var(--color-green);
+    font-size: 20px;
+    background-color: white;
+}
+
+.form-control, .form-select {
+    transition: none;
+}
+.form-control:focus, .form-select:focus {
+    box-shadow: none;
+    border: 1px solid white;
+    border-color: none;
+}
+
+
+.form-control::placeholder {
+    color: var(--color-green-light);
+}
+
+.header-label {
+    font-size: 14px;
+}
+
+.my-form-btn, .my-form-btn:hover {
+    background-color: white;
+    color: var(--color-text);
+    border: 1px solid white;
+}
+
+.border-bottom {
+    border-color: var(--color-green-light) !important;
+}
+
+
+.form-check-input:checked {
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+}
+
+.my-btn {
+    background-color: var(--color-green-dark);
+    color: white;
+}
+
+.my-btn:hover {
+    background-color: var(--color-green-hover);
+}
+
+.my-btn-outline {
+    border-color: var(--color-green-dark);
+    color: var(--color-green-dark);
+}
+
+.btn-outline-success {
+    --bs-btn-color: var(--color-green-dark);
+    --bs-btn-border-color: var(--color-green-dark);
+    --bs-btn-hover-bg: var(--color-green-dark);
+    --bs-btn-hover-border-color: var(--color-green-dark);
+    --bs-btn-active-bg: var(--color-green-dark);
+    --bs-btn-active-border-color: var(--color-green-dark);
+    --bs-btn-disabled-color: var(--color-green-dark);
+    --bs-btn-disabled-border-color: var(--color-green-dark);
+}
+
+@media(max-width:768px) {
+    #btn-save {
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #btn-save i {
+        font-size: 1.5rem;
+        padding-top: 4px;
+    }
+
+}
